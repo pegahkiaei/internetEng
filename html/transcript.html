@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحه اصلي</title>
+
+    <link rel="stylesheet" type="text/css" href="../assets/semantic/semantic.rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/site.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/semantic.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/dropdown.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/sidebar.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/transition.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/transition.min.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="../css/firstPage.css">
+    <link rel="stylesheet" type="text/css" href="../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../css/table.css">
+
+    <script type="text/javascript" src="../assets/js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="../assets/semantic/semantic.min.js"></script>
+    <script type="text/javascript" src="../assets/js/semantic.js"></script>
+    <script type="text/javascript" src="../assets/js/site.js"></script>
+    <script language="javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/dropdown.js"></script>
+    <script type="text/javascript" src="../assets/js/dropdown.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sidebar.js"></script>
+    <script type="text/javascript" src="../assets/js/sidebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/transition.js"></script>
+    <script type="text/javascript" src="../assets/js/transition.min.js"></script>
+    <script type="text/javascript" src="../assets/js/visibility.js"></script>
+    <script type="text/javascript" src="../assets/js/visibility.min.js"></script>
+    <script  type="text/javascript" src="../assets/js/tablesort.js"></script>
+
+    <script>
+
+        $(document)
+                .ready(function() {
+
+                    //sorting table
+                    $('.sortable.table').tablesort();
+
+                    // show dropdown on hover
+                    $('.main.menu  .ui.dropdown').dropdown({
+                        on: 'hover'
+                    });
+                })
+        ;
+    </script>
+
+</head>
+<body>
+
+<div class=" ui right aligned header style-header">
+
+    <div class="ui horizontal list style-header">
+
+        <button class="ui secondary button">
+            <i class="home icon"></i>
+            &nbsp صفحه اصلي
+        </button>
+        <div id="topM" class="ui secondary floating dropdown  button">
+            <i class="list layout icon"></i>
+            &nbsp گزينه ها
+            <div class="menu">
+                <a class="active olive item">صفحه اعلان ها</a>
+                <a class="olive item" href="http://google.com">مشاهده و ويرايش پروفايل</a>
+                <a class="olive item" href="#">مشاهده کارنامه</a>
+
+                <a class="olive item">انتخاب واحد</a>
+                <a class="olive item">مشاهده ليست درس ها</a>
+
+                <a class ="olive item"> خروج</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container pusher style-container" >
+    <div id="sideM" class="ui simple right sidebar visible inverted vertical menu">
+        <a class="olive item">صفحه اعلان ها</a>
+        <a class="olive item" href="http://google.com">مشاهده و ويرايش پروفايل</a>
+        <a class="active olive item" href="#">مشاهده کارنامه</a>
+
+        <a class="olive item">انتخاب واحد</a>
+        <a class="olive item">مشاهده ليست درس ها</a>
+        <a class ="olive item"> خروج</a>
+
+    </div>
+    <div class="style-sideSupport"></div>
+
+    <div class=" style-content scrollable">
+    <!--table1-->
+        <div class="scrollable">
+            <table class="ui  complex celled  sorted unstructured olive  small compact selectable  right highlight aligned unstackable table table-striped">
+                <thead>
+                <tr>
+                    <th rowspan="2" class = "descending  sticky">ردیف</th>
+                    <th rowspan="2">ترم</th>
+                    <th rowspan="2">وضع و نوع ترم</th>
+                    <th colspan="2">واحد اخذ شده</th>
+                    <th colspan="3">واحد گذرانده شده</th>
+                    <th rowspan="2">واحدهای اعلام نشده</th>
+                    <th rowspan="2">واحدهای ناتمام</th>
+                    <th rowspan="2">واحدهای حذف شده</th>
+                    <th rowspan="2">واحدهای رد شده</th>
+                    <th rowspan="2">معدل</th>
+                    <th rowspan="2">مشروط</th>
+                    <th rowspan="2">شهریه</th>
+                </tr>
+                <tr>
+                    <th>ترم</th>
+                    <th>متوالی</th>
+                    <th>ترم</th>
+                    <th>کل</th>
+                    <th>متوالی</th>
+                </tr>
+
+
+                </thead>
+                <tbody>
+                <tr>
+                    <td>11</td>
+                    <td>مشغول به تحصیل-عادی</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>18</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>17.86</td>
+                    <td>17.86</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th>3 People</th>
+                    <th>2 Approved</th>
+                    <th></th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    <!--table-end1-->
+    </div>
+
+    <footer class="footer inverted segment style-footer"> Powered By Sbu</footer>
+</div>
+</body>
