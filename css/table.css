@@ -1,0 +1,67 @@
+/* important styles below */
+@media (max-width: 700px) {
+    table {
+        width: 100%;
+    }
+
+    .table-wrapper {
+        overflow: hidden;
+        border-right: 1px solid #ccc;
+    }
+
+    .pinned {
+        width: 30%;
+        border-right: 1px solid #ccc;
+        float: left;
+    }
+
+    .scrollable {
+        float: right;
+        width: 100%;
+        overflow: scroll;
+    }
+
+    th {
+        text-transform: uppercase;
+        line-height: 12px;
+        text-align: center;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    td {
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+        height: 30px;
+        white-space: nowrap;
+    }
+
+    .pinned td {
+        position: relative;
+        font-weight: bold;
+        line-height: 18px;
+        text-align: left;
+        overflow: hidden;
+    }
+
+    .pinned td.wrap {
+        white-space: normal;
+    }
+
+    td .outer {
+        position: relative;
+        height: 30px;
+    }
+
+    td .inner {
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        width: 100%;
+    }
+
+    .pinned td .inner.wrap {
+        white-space: normal;
+    }
+}
